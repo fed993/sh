@@ -6,11 +6,11 @@
 /*   By: fpolyans <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/03 05:57:40 by fpolyans          #+#    #+#             */
-/*   Updated: 2017/10/12 05:53:21 by fpolyans         ###   ########.fr       */
+/*   Updated: 2017/10/12 06:14:13 by fpolyans         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "file.h"
+#include "strip_header.h"
 
 int		ft_determine_int_length(int nb)
 {

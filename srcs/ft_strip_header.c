@@ -6,11 +6,11 @@
 /*   By: fpolyans <fpolyans@42.us.org>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/12 05:22:32 by fpolyans          #+#    #+#             */
-/*   Updated: 2017/10/12 05:58:22 by fpolyans         ###   ########.fr       */
+/*   Updated: 2017/10/12 06:14:57 by fpolyans         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "file.h"
+#include "strip_header.h"
 
 char	*ft_strip_header(char *s)
 {

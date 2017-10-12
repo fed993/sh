@@ -6,11 +6,11 @@
 /*   By: fpolyans <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/05 20:50:33 by fpolyans          #+#    #+#             */
-/*   Updated: 2017/10/12 05:54:18 by fpolyans         ###   ########.fr       */
+/*   Updated: 2017/10/12 06:15:14 by fpolyans         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "file.h"
+#include "strip_header.h"
 
 int		ft_strlen(char *str)
 {

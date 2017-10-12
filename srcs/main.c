@@ -6,11 +6,11 @@
 /*   By: fpolyans <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/13 19:05:06 by fpolyans          #+#    #+#             */
-/*   Updated: 2017/10/12 06:08:08 by fpolyans         ###   ########.fr       */
+/*   Updated: 2017/10/12 06:13:40 by fpolyans         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "file.h"
+#include "strip_header.h"
 
 int		main(int ac, char **av)
 {
