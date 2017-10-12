@@ -6,7 +6,7 @@
 /*   By: fpolyans <fpolyans@42.us.org>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/12 05:22:32 by fpolyans          #+#    #+#             */
-/*   Updated: 2017/10/12 06:14:57 by fpolyans         ###   ########.fr       */
+/*   Updated: 2017/10/12 06:44:14 by fpolyans         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,8 @@ char	*ft_strip_header(char *s)
 	i = 0;
 	out	= (char*)malloc(sizeof(char) * sizeof(s) + 1);
 	if (s[i] == '/' && s[i + 1] == '*' && s[i + 2] == ' ')
-	{
 		out = &s[81 * 11];
-	}
-	ft_putstr(out);
+	else
+		out = s;
 	return (out);
 }
