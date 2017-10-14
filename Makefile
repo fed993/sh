@@ -6,15 +6,13 @@
 #    By: fpolyans <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/07/11 00:00:42 by fpolyans          #+#    #+#              #
-#    Updated: 2017/10/12 05:59:22 by fpolyans         ###   ########.fr        #
+#    Updated: 2017/10/13 19:32:01 by fpolyans         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SOURCES = srcs/ft_putchar.c srcs/ft_putstr.c \
-		  srcs/ft_strlen.c srcs/ft_putnbr.c srcs/ft_strip_header.c
+SOURCES = srcs/ft_putstr.c srcs/ft_strlen.c
 
-OBJECTS = ft_putchar.o ft_putstr.o \
-		  ft_strlen.o ft_putnbr.o ft_strip_header.o
+OBJECTS = ft_putstr.o ft_strlen.o
 
 MAIN = srcs/main.c
 

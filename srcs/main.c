@@ -6,7 +6,7 @@
 /*   By: fpolyans <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/13 19:05:06 by fpolyans          #+#    #+#             */
-/*   Updated: 2017/10/12 07:00:24 by fpolyans         ###   ########.fr       */
+/*   Updated: 2017/10/13 19:28:29 by fpolyans         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 int		main(int ac, char **av)
 {
-	int		fd;
+	int		fdin;
+	int		fdout;
 	int		buf_loc;
 	int		file_size;
 	char	buffer[(KB_SIZE * 20 + 1)];
-	char	*file;
 
 	file_size = 0;
-	fd = open(av[ac - 1], O_RDWR);
+	fdin = open(av[ac - 1], O_RDWR);
 	if (ac < 2)
 	{
 		ft_putstr("File name missing.\n");
@@ -34,16 +34,21 @@ int		main(int ac, char **av)
 	}
 	else
 	{
-		while ((buf_loc = read(fd, buffer, 1)))
+		read(fdin, buffer, 3);
+		if (buffer[0] == '/' && buffer[1] == '*' && buffer[2] == ' ')
 		{
-			file_size++;
-			buffer[buf_loc] = '\0';
-			
+//			close(fdin);
+//			fdin = open(av[ac - 1], O_RDWR);
+			fdout = open(av[ac - 1], O_RDWR);
+			read(fdin, buffer, 888);
+			while ((buf_loc = read(fdin, buffer, 1)))
+			{
+				file_size++;
+				buffer[buf_loc] = '\0';
+				write(fdout, buffer, 1);
+			}
+			truncate(av[ac - 1], file_size);
 		}
-		file = (char*)malloc(sizeof(char) * file_size + 1);
-		read(fd, file, file_size);
-		file = ft_strip_header(file);
-		ft_putstr(file);
 	}
 	return (0);
 }
